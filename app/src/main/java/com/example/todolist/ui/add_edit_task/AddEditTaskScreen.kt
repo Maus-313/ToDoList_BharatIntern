@@ -20,6 +20,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.tasklist.ui.add_edit_task.AddEditTaskViewModel
 import com.example.todolist.util.UiEvent
 
@@ -49,7 +50,7 @@ fun AddEditTaskScreen(
         snackbarHost = { SnackbarHost(scaffoldState) },
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp),
+            .padding(0.dp),
         floatingActionButton = {
             FloatingActionButton(onClick = {
                 viewModel.onEvent(AddEditTaskEvent.OnSaveTodoClick)
